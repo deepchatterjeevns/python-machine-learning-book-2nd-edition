@@ -7,7 +7,7 @@ To turn those annoyances into something positive, I will donate $5 to [UNICEF US
 Also below, I added a small leaderboard to keep track of the errata submissions and errors you found. Please let me know if you don't want to be explicitely mentioned in that list! 
 
 
-- Amount for the next donation: 85$
+- Amount for the next donation: 90$
 - Amount donated: 0$
 
 
@@ -19,6 +19,7 @@ Contributor list:
 6. Oliver Tomic ($20)
 7. gabramson ($15)
 1. Gogy ($10)
+12. Haesun Park ($10)
 2. Christian Geier ($5)
 3. Pieter Algra / Carlos Zada ($5)
 4. @gabramson ($5)
@@ -28,6 +29,7 @@ Contributor list:
 9. Elie Kawerk ($5)
 10. Dejan Stepec ($5)
 11. Poon Ho Chuen ($5)
+
 
 
 <br>
@@ -66,16 +68,28 @@ pg. 55
 
 ![](./images/pg55.png)
 
+Note that in scikit-learn version 0.20 (compared to 0.19) you may get different perceptron results.
+In any case, for the perceptron, this is not important as it does not converge anyway when the classes are not linearly seperable, so, the results also depend on the number of iterations and the random seed for data shuffling. The perceptron, in this case, will cyrcle through ~2-9 missclassifications no matter what, since due to the nature of the algorithm, it will never converge on a dataset that is not seperable via a linear boundary/hyperplane.
+
+
+
 pg. 56
 
-Wrong chapter reference in the info box: 
+Earlier prints of the book had a chapter reference in the info box: 
 
 > In ~Chapter 5, Compressing Data via Dimensionality Reduction~ {Chapter 6: Learning Best Practices for Model Evaluation and Hyperparameter Tuning}, you will learn about useful techniques, including graphical analysis such as learning curves, to detect and prevent overfitting.
 
+pg. 81
+
+On pg. 81, I incorrectly state that the `Perceptron` class uses LIBLINEAR. It uses a regular SGD implementation instead for optimization.
 
 pg. 91
 
 On the top of the page, it says "Here, p (i | t ) is the proportion of the samples that belong to class c." The "*c*" should be changed to *i*.
+
+pg. 99
+
+There is a wrong chapter reference at the bottom of this page. It should be *Chapter 6* and not *Chapter 5*.
 
 pg. 101
 
@@ -130,6 +144,10 @@ pg. 221
 There's been a mix-up, the epsilon and the 0.25 should be swapped
 
 ![](./images/pg221.png)
+
+pg. 283
+
+The documentation of `joblib` has recently moved to a new webpage and previous address (http://pythonhosted.org/joblib/) is no longer valid. The new web address for the documentation is https://joblib.readthedocs.io.
 
 pg. 340
 
